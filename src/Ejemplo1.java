@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Ejemplo1 {
     static void main() {
-        int simo;
+        int simo; // por Ejemplo
         double precio;
 
         Scanner Sc = new Scanner(System.in);
