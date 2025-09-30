@@ -11,11 +11,6 @@ public class EjercicioOperadoresLogicos2 {
         boolean esCumpleaños;
         boolean tienePagosPendientes;
 
-        //Dar valor a las variables de entrada
-        //Poner la condición
-        //Ver lo que debe dar y comprobar el resultado pintándolo
-
-
 
 
     }
