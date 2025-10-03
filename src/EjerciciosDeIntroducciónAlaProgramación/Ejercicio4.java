@@ -15,11 +15,11 @@ public class Ejercicio4 {
         Scanner sc = new Scanner(System.in);
         boolean respuestadoA = (3<=7) && (7<=7); // resultado true
         System.out.println(respuestadoA);
-        System.out.println("----------------------"); // resultado true
-        boolean respuestadoB = !((-8>1) && (3<=4));
+        System.out.println("----------------------");
+        boolean respuestadoB = !((-8>1) && (3<=4)); // resultado true
         System.out.println(respuestadoB);
-        System.out.println("----------------------"); // resultado false
-        boolean respuestadoC = "Hola" == "Hola ";
+        System.out.println("----------------------");
+        boolean respuestadoC = "Hola" == "Hola "; // resultado false, por que : (Hola ) tiene espasio
         System.out.println(respuestadoC);
         System.out.println("----------------------");
         boolean respuestadoD = ((2<=5) && (3>=6)) || (2>-1); // resultado true
