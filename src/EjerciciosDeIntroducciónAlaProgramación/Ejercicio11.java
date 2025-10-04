@@ -10,13 +10,13 @@ public class Ejercicio11 {
 
         Scanner Sc = new Scanner (System.in);
         double area, perimetro, radio,Pi;
-        Pi = 3.14;
+        Pi = 3.14; // Pi en Mathematicos = 3.14
         radio = 3.6;
 
-        area = 2 * (Pi * radio);
+        area = Pi * Math.pow(radio, 2); // forma de calcular = area ==> Pi * radio * radio
         System.out.println("El area del perimetro es: " + area);
-        perimetro = Pi * Math.pow(radio, 2);
 
+        perimetro = 2 * (Pi * radio);
         System.out.println("El perimetro es: " + perimetro);
 
 
