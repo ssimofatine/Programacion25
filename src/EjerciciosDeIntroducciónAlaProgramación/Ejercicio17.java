@@ -55,6 +55,58 @@ public class Ejercicio17 {
         }while (cerrado);
         System.out.println("Un número aleatorio que sea uno de los siguientes: 5, 7, 33, 125 o 77: " + f);
 
+        System.out.println("------------------------------------");
+
+        // g. Crea un generador aleatorio de uno de los meses del año
+
+        boolean cerrado2;
+        String  meses = "";
+
+        do {
+            g = (int) (Math.random() * (12 - 1 + 1) + 1);
+            if (g == 1) {
+                meses = "Enero";
+                cerrado2 = false;
+            }else if (g == 2) {
+                meses = "Febrero";
+                cerrado2 = false;
+            } else if (g == 3) {
+                meses = "Marzo";
+                cerrado2 = false;
+            } else if (g == 4) {
+                meses = "Abril";
+                cerrado2 = false;
+            }else if (g == 5) {
+                meses = "Mayo";
+                cerrado2 = false;
+            }else if (g == 6) {
+                meses = "Junio";
+                cerrado2 = false;
+            }else if (g == 7) {
+                meses = "Julio";
+                cerrado2 = false;
+            }else if (g == 8) {
+                meses = "Agosto";
+                cerrado2 = false;
+            }else if (g == 9) {
+                meses = "Septiembre";
+                cerrado2 = false;
+            }else if (g == 10) {
+                meses = "Octubre";
+                cerrado2 = false;
+            }else if (g == 11) {
+                meses = "Noviembre";
+                cerrado2 = false;
+            }else if (g == 12) {
+                meses = "Diciembre";
+                cerrado2 = false;
+            }else {
+                cerrado2 = true ;
+            }
+
+        }while (cerrado2);
+        System.out.println("El nombre de este mes es: " + meses);
+
 
 
 
