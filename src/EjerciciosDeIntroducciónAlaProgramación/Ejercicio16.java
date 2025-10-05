@@ -16,10 +16,10 @@ public class Ejercicio16 {
 
         PI = Math.PI;
         area = PI * Math.pow(diametro, 2);
-        System.out.println("el área de un cilindro: " + area);
+        System.out.println("el área de un cilindro: " + area + " cm");
         System.out.println("-----------------------");
         volumen = area * altura;
-        System.out.println("el volumen de un cilindro: " + volumen);
+        System.out.println("el volumen de un cilindro: " + volumen + " cm");
 
     }
 
