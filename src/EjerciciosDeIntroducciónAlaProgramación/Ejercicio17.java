@@ -25,6 +25,11 @@ public class Ejercicio17 {
         System.out.println("Un número aleatorio positivo par: " + b);
 
         System.out.println("----------------------------");
+        c = (int) (Math.random() * (10 -1 + 1) + 1);
+        System.out.println("Un número real aleatorio entre 1 y 10 :" + c);
+        System.out.println("----------------------------");
+        d = (int) (Math.random() * (10 -1 + 1) + 1);
+
 
 
     }
