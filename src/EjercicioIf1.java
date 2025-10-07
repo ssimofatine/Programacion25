@@ -39,7 +39,7 @@ public class EjercicioIf1 {
         ingresosMensuales = Sc.nextInt();
         System.out.println("-----------------------------");
 
-        System.out.println("Por favor Dime tú deudas Pendientes Ejmplo (S o N): ");
+        System.out.println("Por favor Dime tú deudas Pendientes Ejmplo (S (tines deudas Pendientes)  o N (No tines deudas Pendientes): ");
         deudasPendientes1 = Sc.next().charAt(0);
         System.out.println("------------------------------");
 
