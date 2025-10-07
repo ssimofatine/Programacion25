@@ -1,4 +1,5 @@
-import javax.swing.plaf.synth.SynthOptionPaneUI;
+package Tema2;
+
 import java.util.Scanner;
 
 public class EjercicioIf1 {
