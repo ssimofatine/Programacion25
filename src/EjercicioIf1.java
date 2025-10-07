@@ -43,7 +43,7 @@ public class EjercicioIf1 {
         deudasPendientes1 = Sc.next().charAt(0);
         System.out.println("------------------------------");
 
-        if ( deudasPendientes1 == 'n') {
+        if ( deudasPendientes1 == 's') {
 
             deudasPendientes = false;
         }
