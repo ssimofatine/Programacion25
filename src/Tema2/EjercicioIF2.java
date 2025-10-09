@@ -1,5 +1,7 @@
 package Tema2;
 
+import java.util.Scanner;
+
 public class EjercicioIF2 {
     public static void main(String[] args) {
 
@@ -26,6 +28,45 @@ public class EjercicioIF2 {
         //      discapacidad(0-100), familiaNumerosa (true/false)
         //V.S.: si te dan beca o no, y en caso afirmativo qué tipo de beca
 
+        Scanner Sc = new Scanner(System.in);
+        char asignaturas;
+        int  IngresosFamiliares;
+
+        System.out.println("Por Favoe ¿Reprobaste más de dos asignaturas? (S o N)");
+        asignaturas = Sc.next().charAt(0);
+        System.out.println("-----------------------------------");
+        System.out.println("a quie ngresos tú familiares: ");
+        IngresosFamiliares = Sc.nextInt();
+        System.out.println("------------------------------------");
+        System.out.println("Donde Vives .. Tú casa muy lejos y vulnerable escribe (S o N)");
+        char Vives = Sc.next().charAt(0);
+        System.out.println("------------------------------------");
+        System.out.println(" tienes Discapacidad Por favor escribe cuanto tienes por ejemplo (20 or 60 or 100 ...)");
+        int Discapacidad = Sc.nextInt();
+        System.out.println("---------------------------------------");
+        System.out.println("Tú Tienes Familla grande :");
+        char famillaGrande = Sc.next().charAt(0);
+        System.out.println("-----------RESYLTADO-------------");
+
+
+
+        if ( asignaturas == 's') {
+            System.out.println("Lo Siento No obtndras la beca");
+
+        } else if (IngresosFamiliares <= 800 && Vives == 's' && Discapacidad == 60) {
+            System.out.println("BECA COMPLETA");
+            
+        } else if (IngresosFamiliares <= 1000 && famillaGrande == 's') {
+            System.out.println("BECA PARCIAL");
+        }else if (IngresosFamiliares <= 1100 && Vives == 's') {
+            System.out.println("BECA PARCIAL");
+        }else if (IngresosFamiliares <=1200 ) {
+            System.out.println("BECA PARCIAL");
+        }else if (Discapacidad >= 40 && Discapacidad <= 60 ) {
+            System.out.println("BECA PARCIAL");
+        } else if ((IngresosFamiliares >=1400 && IngresosFamiliares <=1800) || (Discapacidad >= 20 && Discapacidad <=40)) {
+            System.out.println("BECA SIMPLE");
+        }
 
 
     }
