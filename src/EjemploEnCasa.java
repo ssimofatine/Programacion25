@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.List;
 public class EjemploEnCasa {
 
     public static void main(String[] args) {
@@ -12,21 +14,24 @@ public class EjemploEnCasa {
         System.out.println("Ingrese una palabra del vocales: ");
         String palabra = Sc.nextLine();
 
-        // palabra = "elsimo"
-
-
-        String laLetra = "aieouAIEOUáíéóúÁÉÍÓÚ";
+        String vocales = "aeiouAEIOUáéíúóÁÉÍÚÓ";
 
         int contador = 0;
 
-        for (int i =0 ; i <= palabra.length() - 1 ; i++ ) {
+        List <Character> palabrar1 = new ArrayList<>();
+
+        for (int i = 0 ; i <= palabra.length() - 1 ; i++){
             char letra = palabra.charAt(i);
-            if (laLetra.contains(String.valueOf(letra))) {
+            if (vocales.contains(String.valueOf(letra))){
                 contador++;
+                palabrar1.add(letra);
             }
+
         }
 
         System.out.println("Palabra: " + palabra + " Contador: " + contador);
+        System.out.println("-------------------");
+        System.out.println("Palabra del vocales: " + palabrar1);
 
     }
 }
