@@ -12,6 +12,8 @@ public class EjercicioBucles4 {
         for (int contador = 8192; contador > 2 ; contador /= 2 ){
             System.out.print(contador + " ");
 
+            Thread.sleep(1000);
+
             System.out.print("\b");
         }
 
