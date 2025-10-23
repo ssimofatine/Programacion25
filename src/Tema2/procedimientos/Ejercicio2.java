@@ -32,6 +32,8 @@ public class Ejercicio2 {
 
         // otro idea
 
+        System.out.println("------------------------------------------");
+
         for (int i = 0; i < 10; i++) {
             pintarAsteriscosDos(i);
         }
