@@ -29,9 +29,34 @@ public class EjemploEnCasa {
 
         }
 
+
+
+
+
         System.out.println("Palabra: " + palabra + " Contador: " + contador);
         System.out.println("-------------------");
         System.out.println("Palabra del vocales: " + palabrar1);
+
+
+        System.out.println("------------------------------------");
+
+        int contador2, min, hora, segundos;
+
+        contador2 = Sc.nextInt();
+
+        hora = contador2 / 3600;
+
+        min = (contador2 % 3600) / 60;
+
+        segundos = (contador2 % 3600) % 60;
+
+        System.out.println("Horas: " + hora + " Minutos: " + min + " Segundos: " + segundos);
+
+        double seguuund= 5, seff= 12;
+
+        seguuund = Math.sqrt(Math.pow((seff - seguuund), 2) + Math.pow((seff - seguuund), 2)) ;
+
+
 
     }
 }
