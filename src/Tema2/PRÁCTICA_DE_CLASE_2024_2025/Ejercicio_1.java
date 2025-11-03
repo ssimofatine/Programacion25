@@ -71,11 +71,6 @@ public class Ejercicio_1 {
         System.out.println("Introduzca Dime tu numero por teclado: ");
 
         numero = Sc.nextInt();
-        String nm = "simo";
-
-        System.out.println(nm.length());
-
-
 
         do {
             System.out.println("------Menu------");
