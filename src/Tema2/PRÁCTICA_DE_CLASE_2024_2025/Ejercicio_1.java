@@ -42,7 +42,11 @@ public class Ejercicio_1 {
 
                 break;
             case 3:
-                System.out.println("Ingrese un numero");
+                // forma de calcular es : c = 2 * pi * numero
+                double c;
+                double PI = Math.PI;
+                c = 2 * PI * m ;
+                System.out.println("circunferencia es : " + c);
                 break;
             case 4:
                 System.out.println("Adios ");
