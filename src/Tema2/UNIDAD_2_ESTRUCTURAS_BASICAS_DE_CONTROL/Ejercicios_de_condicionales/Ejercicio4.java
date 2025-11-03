@@ -15,5 +15,12 @@ public class Ejercicio4 {
          */
         Scanner Sc = new Scanner(System.in);
 
+        int Deniro;
+        System.out.println("Ingrese el numero de deniro: ");
+        Deniro = Sc.nextInt();
+
+
+
+
     }
 }
