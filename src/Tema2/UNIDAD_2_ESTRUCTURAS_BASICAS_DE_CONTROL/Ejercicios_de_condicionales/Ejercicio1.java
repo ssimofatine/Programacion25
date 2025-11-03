@@ -2,7 +2,7 @@ package Tema2.UNIDAD_2_ESTRUCTURAS_BASICAS_DE_CONTROL.Ejercicios_de_condicionale
 
 import java.util.Scanner;
 
-public class Ejercicio_1 {
+public class Ejercicio1 {
     public static int mayor(int a, int b, int c) {
 
         if (a > b && a > c) {
