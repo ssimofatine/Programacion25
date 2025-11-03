@@ -16,18 +16,23 @@ public class Ejercicio3 {
 
         numero = SC.nextInt();
 
-        while (numero < 0 || numero >= 10) {
-            if (numero >= 10) {
-                System.out.println("Error: no es un número de un dígito");
-            }
-            if (numero < 0) {
-                System.out.println("tu número no positivo porfa introduce numero positivo");
-            }
-            System.out.println("---------------------");
-            System.out.println("porfa introduce el primer numero por Ejemplo (0, 1, 2, 3, 4, 5, 6, 7, 8, 9): ");
-            numero = SC.nextInt();
+        try {
+            while (numero < 0 || numero >= 10) {
+                if (numero >= 10) {
+                    System.out.println("Error: no es un número de un dígito");
+                }
+                if (numero < 0) {
+                    System.out.println("tu número no positivo porfa introduce numero positivo");
+                }
+                System.out.println("---------------------");
+                System.out.println("porfa introduce el primer numero por Ejemplo (0, 1, 2, 3, 4, 5, 6, 7, 8, 9): ");
+                numero = SC.nextInt();
 
 
+            }
+        }catch (Exception e) {
+            System.out.println("Error: 'porfa no escribe como este (1-, -2, !, @, ....)' " + e.getMessage());
+            SC.next();
         }
 
         for (int i = 0; i < 10; i++) {
@@ -76,6 +81,10 @@ public class Ejercicio3 {
                 }
             }
         }
+
+        // aqui fin de Scanner
+
+        SC.close();
 
 
     }
