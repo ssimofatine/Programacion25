@@ -1,4 +1,4 @@
-package Tema2.PRÁCTICA_DE_CLASE_2024_2025;
+package Tema2.PRACTICA_DE_CLASE_2024_2025;
 import java.util.Scanner;
 public class Ejercicio_1 {
     public static void Menu() {
@@ -57,7 +57,7 @@ public class Ejercicio_1 {
         }
     }
     public static void main(String[] args) {
-        /**
+        /*
          * Menú
          * Realiza un programa que pida un número por teclado. Luego muestra un menú con las
          * siguientes opciones:
