@@ -1,4 +1,4 @@
-package Tema2.PRACTICA_DE_CLASE_2024_2025.Marcus_Cubitus_y_Julius_Humerus;
+package Tema2.Marcus_Cubitus_y_Julius_Humerus;
 import java.util.Scanner;
 public class Ejercicio1 {
     public static int aleatorio(int max, int min){
