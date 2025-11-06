@@ -4,29 +4,34 @@ public class Ejercicio1 {
     public static int aleatorio(int max, int min){
         return (int) ((Math.random()*(max-min+1))+min);
     }
-    public static int caluclar(int turno){
-        int total = 0;
+    public static void caluclar(int turno){
+        int totalMarcus = 0;
+        int totalCubitus = 0;
         int empate = 0;
+        int rundaMarcus = 0;
+        int rundaJulius = 0;
 
         int dadoMarcus, dadoJulius;
 
 
-        for (int i = 0; i < turno; i++) {
+        for (int i = 1; i <= turno; i++) {
             dadoMarcus = aleatorio(6,1);
             dadoJulius = aleatorio(6,1);
             System.out.println("-----------------------");
             System.out.println("Dados de marcus: " + dadoMarcus + " Dados de julius: " + dadoJulius);
             if (dadoMarcus > dadoJulius) {
-                total += dadoMarcus + dadoJulius + empate;
+                totalMarcus += dadoMarcus + dadoJulius + empate;
                 System.out.println("-----------------------");
-                System.out.println("gana los puntos de ambos dados : " + total + " marcus: " + total + " julius");
+                System.out.println("gana los puntos de ambos dados : " + totalMarcus + " marcus: ");
                 System.out.println("Marcus es gana en este runda: "+ i );
+                rundaMarcus++;
                 empate = 0 ;
             }else if (dadoMarcus < dadoJulius) {
-                total += dadoMarcus + dadoJulius + empate;
+                totalCubitus += dadoMarcus + dadoJulius + empate;
                 System.out.println("-----------------------");
-                System.out.println("gana los puntos de ambos dados : " + total + " marcus: " + total + " julius");
+                System.out.println("gana los puntos de ambos dados : " + totalCubitus + " julius");
                 System.out.println("Julius es gana en este runda: "+ i );
+                rundaJulius++;
                 empate = 0 ;
             }else {
                 if (i == (turno -1)){
@@ -37,7 +42,27 @@ public class Ejercicio1 {
                 System.out.println("Empate");
             }
         }
-        return total;
+        System.out.println("----------------------------");
+        System.out.println("Total puntos Marcus es: "+ totalMarcus + " marcus: " + " Y total rundas es: "+ rundaMarcus);
+        System.out.println("Total puntos Juluia es: "+ totalCubitus+ " Julius: "+" Y total rundas es:"+ rundaJulius);
+        System.out.println("--------------------------");
+        if (rundaJulius > rundaMarcus) {
+            System.out.println("Juluis gana en rundas: " + rundaJulius + " julius");
+        }else if (rundaJulius < rundaMarcus) {
+            System.out.println("Marcus gana en rundas: " + rundaMarcus + " marcus");
+        }else {
+            System.out.println("Empate");
+        }
+
+        System.out.println("------------------------");
+
+        if (totalCubitus > totalMarcus) {
+            System.out.println("Juluis gana en este juegos: " + totalCubitus + " julius");
+        }else if (totalCubitus < totalMarcus) {
+            System.out.println("Marcus gana en este juegos: " + totalCubitus + " marcus");
+        }else {
+            System.out.println("Empate");
+        }
 
     }
 
@@ -61,14 +86,7 @@ public class Ejercicio1 {
         System.out.println("Introduzca el turno: ");
         turno = sc.nextInt();
 
-        for (int i = 0; i < turno; i++) {
-            int tiradaMarcus = caluclar(turno);
-            int tiradaJulius = caluclar(turno);
-            System.out.println("-----------------------");
-            System.out.println(tiradaJulius+" "+tiradaMarcus);
-
-
-        }
+        caluclar(turno);
 
     }
 }
