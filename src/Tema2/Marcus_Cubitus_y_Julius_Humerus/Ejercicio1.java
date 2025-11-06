@@ -2,8 +2,10 @@ package Tema2.Marcus_Cubitus_y_Julius_Humerus;
 import java.util.Scanner;
 public class Ejercicio1 {
     public static int aleatorio(int max, int min){
+
         return (int) ((Math.random()*(max-min+1))+min);
     }
+
     public static void caluclar(int turno){
         int totalMarcus = 0;
         int totalCubitus = 0;
