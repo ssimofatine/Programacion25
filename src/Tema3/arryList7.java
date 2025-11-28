@@ -10,12 +10,11 @@ public class arryList7 {
         return total;
     }
 
-
-
     public static double[]  NotasAlumno(int total) {
         Scanner sc = new Scanner(System.in);
         double[] Notas = new double[total];
         for(int i = 0 ; i < Notas.length ; i++){
+            // mi problema olvide suma = 0 + 1
             System.out.println("Porfa Dami Nota " + (i + 1) + ": ");
             Notas[i] = sc.nextDouble();
 
@@ -46,10 +45,6 @@ public class arryList7 {
             System.out.println("El Nombre Alumno/a es: " + NombresAlumnoFinal[i] + " Y Notas: " + NotasAlumnoFinal[i]);
             System.out.println("--------------------------");
         }
-
-
-
-
 
     }
 }
