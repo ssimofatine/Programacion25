@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class arrayList8 {
     public static int PintarArray() {
         Scanner Sc = new Scanner(System.in);
-        System.out.println("Digite um valor ArrayList: ");
+        System.out.println("Porfa dime tu numero del ArrayList: ");
         int num = Integer.parseInt(Sc.nextLine());
         return num;
     }
