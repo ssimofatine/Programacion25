@@ -1,5 +1,4 @@
 package Tema3;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class arrayList8 {
@@ -41,8 +40,6 @@ public class arrayList8 {
         double Total = PintarDouble(NumeroArray1);
 
         System.out.println("-------------------------------");
-
-
 
         System.out.println("Numero ArrayList es: " + Numero);
 
