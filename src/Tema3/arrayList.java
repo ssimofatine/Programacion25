@@ -3,7 +3,7 @@ package Tema3;
 public class arrayList {
     static void main(String[] args) {
         /**
-         *
+         *arry list
          */
 
         int [] List = new int[10];
