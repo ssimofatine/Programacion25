@@ -3,6 +3,22 @@ package PruebaExamen;
 import java.util.Scanner;
 
 public class Ejercicio1 {
+    public static boolean pruebaTrue(int frase1, int primer1, int i) {
+
+        if (i + primer1 > frase1 ) {
+            return false;
+        }
+        return true;
+    }
+
+    public static boolean palabraTrue(String frase, String primer, int j, int i) {
+
+        if (frase.charAt(i + j) != primer.charAt(j) ) {
+            return false;
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         /**
          *  Implementa un programa que pida al usuario que introduzca una frase, y a
@@ -26,8 +42,38 @@ public class Ejercicio1 {
         StringBuffer sb = new StringBuffer();
 
 
+        int frase1 = frase.length();
+        int primer1 = primer.length();
+
         for (int i = 0; i < frase.length() ; i++) {
+            boolean prueba = true;
+            if (!pruebaTrue(frase1, primer1, i)){
+                prueba = false;
+            }else {
+                for (int j = 0; j < primer.length() ; j++) {
+                    if (!palabraTrue(frase, primer, j,i)){
+                        prueba = false;
+                        break;
+                    }
+                }
+            }
+
+            if (prueba) {
+                sb.append(seg);
+                i = i + primer.length() - 1;
+
+            }else {
+                sb.append(frase.charAt(i));
+            }
+
+
 
         }
+
+        System.out.println("--- Resultado ---");
+        System.out.println(sb.toString());
+
+
+
     }
 }
