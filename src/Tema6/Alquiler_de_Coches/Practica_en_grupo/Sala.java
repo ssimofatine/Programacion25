@@ -24,7 +24,36 @@ public class Sala {
      * toString que muestre los enemigos
      */
 
+
+    //Atributos
     private int numeroSala;
     private ArrayList<Enemigo> enemigos;
     private boolean completada;
+
+    //Constructor
+
+
+    public Sala(int numeroSala, boolean completada) {
+        this.numeroSala = numeroSala;
+        this.completada = completada;
+        this.enemigos = new ArrayList<>();
+    }
+
+    //Métodos
+    public void generarEnemigos(){
+        int numEnemigos;
+        if(this.numeroSala >= 1 && this.numeroSala >= 2){
+            numEnemigos = (int)(Math.random() * 2) + 2;
+            for(int i = 1; i <= numEnemigos; i++){
+                Enemigo genrarEnemigo = new Enemigo("Goblin", 30, 8, 3, TipoEnemigo.GOBLIN, 20);
+                this.enemigos.add(genrarEnemigo);
+
+            }
+        } else if (this.numeroSala >= 3 && this.numeroSala >= 4) {
+            numEnemigos = (int)(Math.random() * 2) + 1;
+            for(int i = 1; i <= numEnemigos; i++){
+                Enemigo genrarEnemigo = new Enemigo("Orco", 60, 15,
+            }
+        }
+    }
 }
