@@ -66,14 +66,29 @@ public class Enemigo extends Personaje{
      * GOBLIN: "Golpe Rápido" - ataca dos veces seguidas con daño reducido
      * ORCO: "Grito de Guerra" - aumenta su ataque temporalmente
      * DRAGON: "Aliento de Fuego" - daña a todos los héroes
-     * @param tipo
+     * @param objetivo
      */
 
 
-    void usarHabilidadEspecial(Personaje objetivo){
+    public void usarHabilidadEspecial(Personaje objetivo){
         // crear una variavle int danio
         int danio;
         if(this.tipo == TipoEnemigo.GOBLIN){
+            // GOBLIN: "Golpe Rápido" - ataca dos veces seguidas con daño reducido
+            danio = this.ataque;
+            System.out.println(this.nombre + " ataca Heroe " + objetivo.getNombre() + " causando " + danio);
+            objetivo.recibirDanio(danio);
+        } else if (this.tipo == TipoEnemigo.ORCO) {
+            // aumenta su ataque temporalmente
+            danio = this.ataque ;
+            System.out.println(this.nombre + " ataca Heroe " + objetivo.getNombre() + " causando " + danio);
+            objetivo.recibirDanio(danio);
+        } else if (this.tipo == TipoEnemigo.DRAGON) {
+            //"Aliento de Fuego" - daña a todos los héroes
+            danio = this.ataque;
+            System.out.println(this.nombre + " ataca Heroe " + objetivo.getNombre() + " causando " + danio);
+            objetivo.recibirDanio(danio);
+
 
         }
     }

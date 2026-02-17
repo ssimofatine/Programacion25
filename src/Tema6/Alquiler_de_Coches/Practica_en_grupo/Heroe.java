@@ -61,10 +61,10 @@ public class Heroe extends Personaje{
     }
 
     //usa una poción del inventario
-    void usarItem(Item item){
-
-
-
+    public void usarItem(Item item){
+        this.inventario.remove(item);
+        this.curar(item.getValorCuracion());
+        System.out.println(this.nombre + " se ha curado. Vida actual: " + this.puntosVidaActual + ". Vida maxima: " + this.puntosVidaMax + " y ya esta");
     }
 
 
@@ -99,9 +99,26 @@ public class Heroe extends Personaje{
         return inventario;
     }
 
-    public void setInventario(ArrayList<Item> inventario) {
-        this.inventario = inventario;
+
+    // ToString Con StringBufferr
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Heroe{");
+        sb.append("tipo=").append(tipo);
+        sb.append(", nivel=").append(nivel);
+        sb.append(", experiencia=").append(experiencia);
+        sb.append(", inventario=").append(inventario);
+        sb.append(", nombre='").append(nombre).append('\'');
+        sb.append(", puntosVidaMax=").append(puntosVidaMax);
+        sb.append(", puntosVidaActual=").append(puntosVidaActual);
+        sb.append(", ataque=").append(ataque);
+        sb.append(", defensa=").append(defensa);
+        sb.append(", vivo=").append(vivo);
+        sb.append('}');
+        return sb.toString();
     }
+
 
     // Metodo tipoH(tipo) con enum del tipo heroe
 

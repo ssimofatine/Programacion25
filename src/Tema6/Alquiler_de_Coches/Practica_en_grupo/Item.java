@@ -26,8 +26,10 @@ public class Item {
 
 
 
-    // metodo void usar(Heroe heroe)
+    // metodo void usar(Heroe heroe) : aplica la curación al héroe
+    //curación pertenecientes heroe
     public void usar(Heroe heroe){
+        heroe.curar(this.valorCuracion);
 
     }
 
@@ -57,5 +59,30 @@ public class Item {
         sb.append(", valorCuracion=").append(valorCuracion);
         sb.append('}');
         return sb.toString();
+    }
+
+
+    // Metodo tipoE(tipo) con enum del tipo Enemigo
+
+    /**
+     * Según el TipoItem:
+     * POCION_PEQUENA: cura 30 puntos
+     * POCION_GRANDE: cura 60 puntos
+     * ELIXIR: cura completamente
+     * @param tipo
+     */
+    private void tipoI(TipoItem tipo){
+
+        switch (tipo){
+            case POCION_PEQUENA:
+                this.valorCuracion = 30;
+                break;
+            case POCION_GRANDE:
+                this.valorCuracion = 60;
+                break;
+            case ELIXIR:
+                this.valorCuracion = 100;
+                break;
+        }
     }
 }

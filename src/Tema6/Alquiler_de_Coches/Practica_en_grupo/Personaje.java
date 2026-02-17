@@ -1,6 +1,9 @@
 package Tema6.Alquiler_de_Coches.Practica_en_grupo;
 
 public abstract class Personaje {
+
+    public static final Integer vidaMax = 100;
+
     // Atributos comunes
     protected String nombre;
     protected int puntosVidaMax;
@@ -40,9 +43,9 @@ public abstract class Personaje {
         if (this.vivo) {
             this.puntosVidaActual += cantidad;
             if (this.puntosVidaActual > this.puntosVidaMax) {
-                this.puntosVidaActual = this.puntosVidaMax;
+                this.puntosVidaActual = vidaMax;
             }
-            System.out.println(this.nombre + " se ha curado. Vida actual: " + this.puntosVidaActual + "/" + this.puntosVidaMax);
+            System.out.println(this.nombre + " se ha curado. Vida actual: " + this.puntosVidaActual + ". Vida maxima: " + this.puntosVidaMax + " y ya esta");
         }
     }
 
