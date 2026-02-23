@@ -52,7 +52,8 @@ public class Sala {
         } else if (this.numeroSala >= 3 && this.numeroSala >= 4) {
             numEnemigos = (int)(Math.random() * 2) + 1;
             for(int i = 1; i <= numEnemigos; i++){
-                Enemigo genrarEnemigo = new Enemigo("Orco", 60, 15,
+                Enemigo genrarEnemigo = new Enemigo("Orco", 60, 15, 8, TipoEnemigo.ORCO, 40);
+                this.enemigos.add(genrarEnemigo);
             }
         }
     }

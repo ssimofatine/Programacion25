@@ -1,0 +1,12 @@
+Ejercicios de condicionales
+1. Crea una función (método) que reciba como parámetros tres números enteros y devuelva el mayor de
+los tres números. Utilizar esa función para el calcular el mayor de cuatro números enteros. Sería así:
+public int mayor (int a, int b, int c) { … }
+2. Programa que lea un número por teclado e indique si es múltiplo de 2, 3, 5 o 7.
+3. Programa que lea un número positivo de un dígito por teclado y diga en letra a qué dígito corresponde
+(uno, dos, tres, cuatro, …). Ejemplo: si se introduce el 1, se mostrará por pantalla el “uno”; si se introduce
+el 11, se mostrará el mensaje “Error: no es un número de un dígito”.
+4. Crea una función que no devuelva nada (void) que, dado un importe en euros, nos indique el mínimo
+número de billetes y la cantidad sobrante que se pueden utilizar para obtener dicha cantidad. Ejemplo:
+362 euros → 1 billete de 200, 1 billete de 100, 1 billete 50, un billete de 10, sobran 2 euros. Pista: hay
+que ir sacando la división entera, y el resto se lleva al siguiente billete.
